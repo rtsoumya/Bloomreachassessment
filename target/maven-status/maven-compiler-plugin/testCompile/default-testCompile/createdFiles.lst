@@ -1,0 +1,9 @@
+baseTest\BaseTest.class
+stepDefinitions\DocumentWizardSteps.class
+stepDefinitions\HomePageSteps.class
+stepDefinitions\LoginPageSteps.class
+stepDefinitions\TakeOfflineWizardSteps.class
+testRunner\TestRunner.class
+stepDefinitions\ServiceHooks.class
+stepDefinitions\HippoPageSteps.class
+stepDefinitions\ContentPageSteps.class
