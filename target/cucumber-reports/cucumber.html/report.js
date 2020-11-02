@@ -71,7 +71,7 @@ formatter.examples({
     {
       "cells": [
         "product",
-        "Chairs for Adults",
+        "Chairs for Kids",
         "Home"
       ],
       "line": 16,
@@ -81,7 +81,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 7723240758,
+  "duration": 11189315309,
   "status": "passed"
 });
 formatter.background({
@@ -114,7 +114,7 @@ formatter.match({
   "location": "LoginPageSteps.user_is_logged_in_with_valid_username_something_password_something_and_language_something(String,String,String)"
 });
 formatter.result({
-  "duration": 3293024970,
+  "duration": 1620801756,
   "status": "passed"
 });
 formatter.scenario({
@@ -149,7 +149,7 @@ formatter.step({
 });
 formatter.step({
   "line": 9,
-  "name": "enters document Chairs for Adults, Home if present and clicks on OK on a Document Wizard",
+  "name": "enters document Chairs for Kids, Home if present and clicks on OK on a Document Wizard",
   "matchedColumns": [
     1,
     2
@@ -158,7 +158,7 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "user is navigated to Content Page with document Chairs for Adults displayed",
+  "name": "user is navigated to Content Page with document Chairs for Kids displayed",
   "matchedColumns": [
     1
   ],
@@ -184,38 +184,39 @@ formatter.match({
   "location": "HomePageSteps.user_clicks_on_selcet_a_document(String)"
 });
 formatter.result({
-  "duration": 11573157398,
+  "duration": 12146414822,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Chairs for Adults",
+      "val": "Chairs for Kids",
       "offset": 16
     },
     {
       "val": "Home",
-      "offset": 35
+      "offset": 33
     }
   ],
   "location": "DocumentWizardSteps.enters_document_if_present_and_clicks_on_ok_on_a_document_wizard(String,String)"
 });
 formatter.result({
-  "duration": 1087137446,
+  "duration": 1944327007,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Chairs for Adults",
+      "val": "Chairs for Kids",
       "offset": 48
     }
   ],
   "location": "ContentPageSteps.user_is_navigated_to_content_page_with_document_displayed(String)"
 });
 formatter.result({
-  "duration": 1918343368,
-  "status": "passed"
+  "duration": 145064476,
+  "error_message": "java.lang.AssertionError: Document Chairs for Kids is not displayed expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\r\n\tat org.testng.Assert.assertTrue(Assert.java:42)\r\n\tat stepDefinitions.ContentPageSteps.user_is_navigated_to_content_page_with_document_displayed(ContentPageSteps.java:16)\r\n\tat ✽.Then user is navigated to Content Page with document Chairs for Kids displayed(ManageDocument.feature:10)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -227,8 +228,7 @@ formatter.match({
   "location": "ContentPageSteps.user_clicks_on_something_on_content_page(String)"
 });
 formatter.result({
-  "duration": 789580385,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -240,12 +240,11 @@ formatter.match({
   "location": "ContentPageSteps.document_is_updated_with_something_message(String)"
 });
 formatter.result({
-  "duration": 174730065,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 1399543399,
+  "duration": 1261537850,
   "status": "passed"
 });
 });

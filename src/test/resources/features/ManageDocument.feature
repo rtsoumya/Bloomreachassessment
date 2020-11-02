@@ -3,7 +3,7 @@ Feature: Manage Document
   Background: 
     Given user is logged in with valid username "admin10" password "admin10" and language "en"
 
-  @regression_positive @smoke
+  @regression_positive @smoke 
   Scenario Outline: Verification of Document Draft Creation Function
     When user clicks on selcet a <type> document
     And enters document <name>, <value> if present and clicks on OK on a Document Wizard
@@ -12,8 +12,8 @@ Feature: Manage Document
     Then document is updated with "draft" message
 
     Examples: 
-      | type    | name            | value |
-      | product | Chairs for Kids | Home  |
+      | type    | name                 | value |
+      | product | Laps for Study Table | Home  |
 
   @regression_positive @smoke
   Scenario Outline: Verification of Document Creation Function
