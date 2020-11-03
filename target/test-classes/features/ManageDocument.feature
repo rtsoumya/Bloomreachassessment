@@ -3,7 +3,7 @@ Feature: Manage Document
   Background: 
     Given user is logged in with valid username "admin10" password "admin10" and language "en"
 
-  @regression_positive @smoke 
+  @regression_positive @smoke
   Scenario Outline: Verification of Document Draft Creation Function
     When user clicks on selcet a <type> document
     And enters document <name>, <value> if present and clicks on OK on a Document Wizard
@@ -79,13 +79,13 @@ Feature: Manage Document
     Then document with given <title> is created
     When user clciks on EDIT
     And enter data into fields and clciks on Done
-      | Summary     |               | <summary> |
-      | Description | <description> |           |
-      | Price       | <price>       |           |
+      | Summary     | <summary>     |
+      | Description | <description> |
+      | Price       | <price>       |
     Then document is updated with all the new data
-      | Summary     |               | <summary> |
-      | Description | <description> |           |
-      | Price       | <price>       |           |
+      | Summary     | <summary>     |
+      | Description | <description> |
+      | Price       | <price>       |
 
     Examples: 
       | type    | name                 | title         | value   | summary        |
@@ -103,9 +103,9 @@ Feature: Manage Document
     Then document with given <title> is created
     When user click on EDIT
     And enter data into fields and clciks on Cancel
-      | Summary     |               | <summary> |
-      | Description | <description> |           |
-      | Price       | <price>       |           |
+      | Summary     | <summary>     |
+      | Description | <description> |
+      | Price       | <price>       |
     Then cancel edting wizard comes up
     When user clicks on "Discard"
     Then user is navigated to Content page
@@ -123,9 +123,9 @@ Feature: Manage Document
     Then document with given <title> is created
     When user clicks on EDIT
     And enter data into fields and clciks on Cancel
-      | Summary     | <summary>     |  |
-      | Description | <description> |  |
-      | Price       | <price>       |  |
+      | Summary     | <summary>     |
+      | Description | <description> |
+      | Price       | <price>       |
     Then cancel edting wizard comes up
     When user clicks on "Cancel"
     Then user is navigated back to Edit page
